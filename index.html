@@ -3,228 +3,497 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Oladele Campbell - Academic Portfolio</title>
+    <title>Dr. Oladele Campbell – Academic Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbTj0k0sR9wlJq4oXpkzXbvoWb+U/jvM+PFTQ3P1JZCx0b9KU3sQxbv7gTQjvWJ5X1o9Q7bkrmWVNZHfxs2hFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         :root {
-            --primary-color: #005f50;
-            --secondary-color: #a5d6a7;
-            --background-color: #f9f9f9;
-            --text-color: #333;
+            --primary-colour: #005f50;
+            --secondary-colour: #a5d6a7;
+            --background-colour: #f9f9f9;
+            --text-colour: #333;
             --card-background: #fff;
             --card-border: #ddd;
-            --button-hover-color: #7cb342;
+            --button-hover-colour: #7cb342;
+            --font-family: 'Lato', sans-serif;
         }
-        body {
-            font-family: Arial, sans-serif;
+
+        /* Global Reset & Body */
+        * {
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: var(--background-color);
-            color: var(--text-color);
+            box-sizing: border-box;
         }
+        html {
+            scroll-behaviour: smooth;
+        }
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            background-colour: var(--background-colour);
+            colour: var(--text-colour);
+        }
+
+        /* Header */
         header {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 1rem 2rem;
-            text-align: center;
+            background-colour: var(--primary-colour);
+            colour: #fff;
+            padding: 1.5rem 1rem;
+            text-align: centre;
         }
         header h1 {
-            margin: 0;
             font-size: 2.5rem;
+            font-weight: 700;
         }
+
+        /* Navigation */
         nav {
-            background-color: #004d40;
-            padding: 0.5rem;
+            background-colour: #004d40;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
-        nav a {
-            color: #fff;
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: centre;
+            padding: 0.5rem 1rem;
+        }
+        .nav-logo {
+            colour: #fff;
+            font-size: 1.25rem;
+            font-weight: 700;
             text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: bold;
         }
-        nav a:hover {
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links li a {
+            colour: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: text-decoration 0.2s ease-in-out;
+        }
+        .nav-links li a:hover {
             text-decoration: underline;
         }
-        .container {
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        footer {
-            background-color: #004d40;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .hero {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('NSP-image.jpg') no-repeat center center/cover;
-            height: 300px;
-            text-align: center;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .section-title {
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            border-bottom: 3px solid var(--secondary-color);
-            display: inline-block;
-        }
-        .card {
-            background: var(--card-background);
-            margin: 1rem 0;
-            padding: 1rem;
-            border: 1px solid var(--card-border);
-            border-radius: 5px;
-        }
-        form input, form textarea, form button {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid var(--card-border);
-            border-radius: 5px;
-        }
-        form button {
-            background-color: var(--secondary-color);
-            color: #fff;
+
+        /* Mobile Navigation Toggle */
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            colour: #fff;
+            background: none;
             border: none;
-        }
-        form button:hover {
-            background-color: var(--button-hover-color);
             cursor: pointer;
         }
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-colour: #004d40;
+                flex-direction: column;
+                align-items: centre;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+            }
+            .nav-links li {
+                margin: 0.75rem 0;
+            }
+            .nav-links.active {
+                max-height: 500px;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                ),
+                url('NSP-image.webp') no-repeat centre centre/cover;
+            height: 300px;
+            display: flex;
+            justify-content: centre;
+            align-items: centre;
+            colour: #fff;
+            text-align: centre;
+            padding: 0 1rem;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        /* Main Container */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid var(--secondary-colour);
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        /* Grid for Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* Card Component */
+        .card {
+            background: var(--card-background);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h4 {
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .card ul {
+            list-style: disc inside;
+            margin-left: 1rem;
+        }
+        .card a {
+            colour: var(--primary-colour);
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Profile Picture */
         .profile-picture {
             float: left;
-            margin-right: 20px;
-            width: 200px;
+            margin-right: 1.5rem;
+            width: 180px;
             height: auto;
-            border: 1px solid var(--secondary-color);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            border: 3px solid var(--secondary-colour);
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            margin-bottom: 1rem;
         }
-        form input:focus, form textarea:focus {
-            outline: 1px solid var(--secondary-color);
+        @media (max-width: 600px) {
+            .profile-picture {
+                display: block;
+                margin: 0 auto 1rem auto;
+                float: none;
+            }
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 0.75rem;
+            font-weight: 500;
+        }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            border: 1px solid var(--card-border);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form input:focus,
+        form textarea:focus {
+            outline: 2px solid var(--secondary-colour);
+        }
+        form button {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background-colour: var(--secondary-colour);
+            colour: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-colour 0.2s ease-in-out;
+        }
+        form button:hover {
+            background-colour: var(--button-hover-colour);
+        }
+
+        /* Footer */
+        footer {
+            background-colour: #004d40;
+            colour: #fff;
+            text-align: centre;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-colour: var(--primary-colour);
+            colour: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            font-size: 1.25rem;
+            display: none;
+            align-items: centre;
+            justify-content: centre;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        #back-to-top:hover {
+            background-colour: var(--button-hover-colour);
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Dr. Oladele O. Campbell - Academic Portfolio</h1>
+        <h1>Dr. Oladele O. Campbell – Academic Portfolio</h1>
     </header>
+
+    <!-- Navigation -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#cv">CV</a>
-        <a href="#professional">Professional</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-        <a href="#blog">Blog</a>
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Oladele Campbell</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="hero" id="home">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <h2>Welcome to My Academic World</h2>
-    </div>
-    <div class="container">
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Curriculum Vitae Section -->
         <section id="cv">
             <h3 class="section-title">Curriculum Vitae</h3>
-            <img src="Oladele-Campbell.jpg" alt="Dr. Oladele O. Campbell" title="Profile picture of Dr. Oladele Campbell" class="profile-picture">
+            <img src="Oladele-Campbell.webp" alt="Dr. Oladele O. Campbell" title="Profile picture of Dr. Oladele Campbell" class="profile-picture" loading="lazy">
             <p>Download my detailed CV <a href="Oladele_Campbell_CV_Current.docx" download>here</a>.</p>
-            <div class="card">
-                <h4>Personal Profile</h4>
-                <p>Dr. Oladele Campbell is a Principal Lecturer at Niger State Polytechnic, Zungeru, Nigeria, with nearly three decades of experience in computer science education, administration, and research.</p>
-            </div>
-            <div class="card">
-                <h4>Education</h4>
-                <ul>
-                    <li>PhD in Computer Science Education, University of South Africa (2022)</li>
-                    <li>MSc in Computer Science, University of Ibadan (2003)</li>
-                    <li>BSc in Computer Science, University of Ibadan (1994)</li>
-                </ul>
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Personal Profile</h4>
+                    <p>Dr. Oladele Campbell is a Principal Lecturer at Niger State Polytechnic, Zungeru, Nigeria, with nearly three decades of experience in computer science education, administration, and research.</p>
+                </article>
+                <article class="card">
+                    <h4>Education</h4>
+                    <ul>
+                        <li>PhD in Computer Science Education, University of South Africa (2022)</li>
+                        <li>MSc in Computer Science, University of Ibadan (2003)</li>
+                        <li>BSc in Computer Science, University of Ibadan (1994)</li>
+                    </ul>
+                </article>
             </div>
         </section>
-        <section id="professional">
+
+        <!-- Professional Affiliations Section -->
+        <section id="professional" style="margin-top: 2.5rem;">
             <h3 class="section-title">Professional Affiliations</h3>
-            <div class="card">
-                <h4>Memberships</h4>
-                <ul>
-                    <li><a href="https://www.acm.org/" target="_blank">Member, Association for Computing Machinery (ACM)</a></li>
-                    <li><a href="https://www.ncs.org.ng/" target="_blank">Member, Nigeria Computer Society</a></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h4>Recognition</h4>
-                <ul>
-                    <li><a href="https://myacm.acm.org/dashboard.cfm?svc=services" target="_blank">Senior Member, ACM (2021)</a></li>
-                    <li>Member, Regional Advisory Committee for <a href="https://comped.acm.org/2025/committees/" target="_blank">CompEd 2025</a></li>
-                </ul>
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Memberships</h4>
+                    <ul>
+                        <li><a href="https://www.acm.org/" target="_blank" rel="noopener">Member, Association for Computing Machinery (ACM)</a></li>
+                        <li><a href="https://www.ncs.org.ng/" target="_blank" rel="noopener">Member, Nigeria Computer Society</a></li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h4>Recognition</h4>
+                    <ul>
+                        <li><a href="https://myacm.acm.org/dashboard.cfm?svc=services" target="_blank" rel="noopener">Senior Member, ACM (2021)</a></li>
+                        <li>Member, Regional Advisory Committee for <a href="https://comped.acm.org/2025/committees/" target="_blank" rel="noopener">CompEd 2025</a></li>
+                    </ul>
+                </article>
             </div>
         </section>
-        <section id="research">
+
+        <!-- Research Section -->
+        <section id="research" style="margin-top: 2.5rem;">
             <h3 class="section-title">Publications & Research</h3>
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Highlighted Publications</h4>
+                    <ul>
+                        <li>Fitsum Deriba, Ismaila Temitayo Sanusi, <b>Oladele O. Campbell</b>, Solomon Sunday Oyelere (2024). Computer Programming Education in the Age of Generative AI: Insights from Empirical Research. <a href="https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=4891302" target="_blank" rel="noopener">PDF</a></li>
+                        <li><b>Oladele O. Campbell</b>, Sanusi, I. T., & Atagana, H. I. (2024). From Visual Arts to Programming: Exploring the Impact on Achievement in Constructionist College CS1 Classes. <em>ITiCSE Proceedings</em>.</li>
+                        <li><b>Oladele O. Campbell</b> et al. (2023). The Impacts of a Constructionist Scratch Programming Pedagogy on Student Achievement with a Focus on Gender. <a href="https://dl.acm.org/doi/pdf/10.1145/3576882.3617911" target="_blank" rel="noopener"><em>CompEd Proceedings</em></a></li>
+                        <li><b>Oladele O. Campbell</b>, & Atagana, H. I. (2022). Impact of a Scratch programming intervention on student engagement in a Nigerian polytechnic first-year class: verdict from the observers. <a href="https://www.cell.com/heliyon/fulltext/S2405-8440(22)00479-0" target="_blank" rel="noopener"><em>Heliyon</em></a></li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h4>Research Interests</h4>
+                    <p>Engaging CS education; Novice programming education; Generative AI; Intelligent Tutoring Systems; the impostor phenomenon; and professional dispositions.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="margin-top: 2.5rem;">
+            <h3 class="section-title">Projects</h3>
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Capstone Project Portal</h4>
+                    <p>This system facilitates final year project topic registration, supervisor approval, and audit logging at Niger State Polytechnic. Built using <b>Flask</b> with a Google Apps Script back-end, it replaces a Google Form solution with a robust web application.</p>
+                    <ul>
+                        <li>Features: Topic uniqueness, supervisor approval workflow, audit trail</li>
+                        <li>Technology: Flask Web App (beta); Google Apps Script; Google Sheets API</li>
+                        <li>Modules: AvailableTopics; TakenTopics; Approval Queue; Activity Log</li>
+                    </ul>
+                    <p><a href="https://finalyeartopics.el.r.appspot.com/" target="_blank" rel="noopener">Visit the Deployed Portal <i class="fas fa-external-link-alt"></i></a></p>
+                </article>
+                <article class="card">
+                    <h4>Upcoming Teaching Innovations</h4>
+                    <p>Planning to develop a series of interactive tutorials and workshops for first‐year programming courses, integrating Scratch and mastery‐based learning approaches. These initiatives aim to enhance student engagement and address impostor phenomenon early in their computing education journey.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="margin-top: 2.5rem;">
+            <h3 class="section-title">Contact</h3>
             <div class="card">
-                <h4>Highlighted Publications</h4>
+                <form action="https://formspree.io/f/mvggzynv" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>Online Profiles</h4>
                 <ul>
-                    <li>Fitsum Deriba, Ismaila Temitayo Sanusi, <b>Oladele O. Campbell</b>, Solomon Sunday Oyelere (2024). Computer Programming Education in the Age of Generative AI: Insights from Empirical Research <a href="https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=4891302" target="_blank"> pdf</a> </li>
-                    <li><b>Oladele O. Campbell</b>, Sanusi, I. T., & Atagana, H. I. (2024). From Visual Arts to Programming: Exploring the Impact on Achievement in Constructionist College CS1 Classes <em>ITiCSE Proceedings</em>.</li>
-                    <li><b>Oladele O. Campbell</b> et al. (2023). The Impacts of a Constructionist Scratch Programming Pedagogy on Student Achievement with a Focus on Gender.<a href="https://dl.acm.org/doi/pdf/10.1145/3576882.3617911" target="_blank"> <em>CompEd Proceedings</em></a> </li>
-                    <li><b>Oladele O. Campbell</b>, & Atagana, H. I. (2022). Impact of a Scratch programming intervention on student engagement in a Nigerian polytechnic first-year class: verdict from the observers. <a href="https://www.cell.com/heliyon/fulltext/S2405-8440(22)00479-0" target="_blank"> <em>Heliyon</em></a> </li>
+                    <li><a href="https://scholar.google.co.za/citations?hl=en&user=KCm9rG0AAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+                    <li><a href="https://www.researchgate.net/profile/Oladele-Campbell" target="_blank" rel="noopener"><i class="fas fa-flask"></i> ResearchGate</a></li>
+                    <li><a href="https://dl.acm.org/profile/99661066432" target="_blank" rel="noopener"><i class="fas fa-book"></i> ACM Digital Library</a></li>
+                    <li><a href="https://www.linkedin.com/in/oladele-campbell-phd-14131820/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
             </div>
-            <div class="card">
-                <h4>Research Interests</h4>
-                <p>Engaging CS education, Novice programming education, Generative AI, Intelligent Tutoring Systems, the impostor phenomenon, and professional dispositions.</p>
-            </div>
         </section>
-        <section id="contact">
-    <h3 class="section-title">Contact</h3>
-    <form action="https://formspree.io/f/mvggzynv" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
-    <div class="card">
-        <h4>Online Profiles</h4>
-        <ul>
-            <li><a href="https://scholar.google.co.za/citations?hl=en&user=KCm9rG0AAAAJ" target="_blank">Google Scholar</a></li>
-            <li><a href="https://www.researchgate.net/profile/Oladele-Campbell" target="_blank">ResearchGate</a></li>
-            <li><a href="https://dl.acm.org/profile/99661066432" target="_blank">ACM Digital Library</a></li>
-            <li><a href="https://www.linkedin.com/in/oladele-campbell-phd-14131820/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </div>
-</section>
-        <section id="blog">
+
+        <!-- Blog & Updates Section -->
+        <section id="blog" style="margin-top: 2.5rem; margin-bottom: 2rem;">
             <h3 class="section-title">News & Updates</h3>
-            <div class="card">
-                <h4>New Book Published</h4>
-                <p><strong>A Guided Introduction to C++ Programming</strong> is now available. This book covers basic to advanced topics in C++ for college students.</p>
-                <p>Download the book <a href="CampbellCPPbook (4).pdf" download>here</a>.</p>
-            </div>
-            <div class="card">
-                <h4>Upcoming Workshop</h4>
-                <p>Dr. Campbell will be hosting a workshop on "Leveraging Generative AI in Computer Science Education" in March 2025. Stay tuned for more details.</p>
-            </div>
-            <div class="card">
-                <h4>Recent Blog Post</h4>
-                <p><a href="latest-blog-post.html">Read: Transforming CS1 Education with Constructionist Pedagogy and Scratch Programming</a></p>
-            </div>
-            <div class="card">
-                <h4>Mastery Learning in Action</h4>
-                <p>Can every student achieve an 'A'? A fascinating research at the University of California, Berkeley, explores a mastery-based learning approach that challenges traditional grading systems. </p>
-                <p>Read more about the 'A’s for All' pilot programme <a href="https://engineering.berkeley.edu/news/2023/12/making-the-grade/" target="_blank">here</a>.</p>
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Presenting at CompEd 2025</h4>
+                    <p>Dr. Campbell will present two research papers at the Global Computing Education Conference (CompEd 2025), to be held 21–25 October 2025 at the University of Botswana, Gaborone:</p>
+                    <ol>
+                        <li><b>The Impostor Phenomenon Among Nigerian Computing Students: A Study of Prevalence, Gender, and Academic Progression</b></li>
+                        <li><b>Preliminary Insights into Computer Science Teacher Preparation Programs in Nigerian Universities</b></li>
+                    </ol>
+                </article>
+                <article class="card">
+                    <h4>New Book Published</h4>
+                    <p><strong>A Guided Introduction to C++ Programming</strong> is now available. This book covers basic to advanced topics in C++ for college students.</p>
+                    <p>Download the book <a href="CampbellCPPbook.webp" download>here</a>.</p>
+                </article>
+                <article class="card">
+                    <h4>Recent Blog Post</h4>
+                    <p><a href="latest-blog-post.html">Transforming CS1 Education with Constructionist Pedagogy and Scratch Programming</a></p>
+                </article>
+                <article class="card">
+                    <h4>Mastery Learning in Action</h4>
+                    <p>Can every student achieve an ‘A’? A fascinating research at the University of California, Berkeley, explores a mastery‐based learning approach that challenges traditional grading systems.</p>
+                    <p>Read more about the ‘A’s for All’ pilot programme <a href="https://engineering.berkeley.edu/news/2023/12/making-the-grade/" target="_blank" rel="noopener">here</a>.</p>
+                </article>
             </div>
         </section>
-    </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Dr. Oladele Campbell | Niger State Polytechnic, Zungeru, Nigeria</p>
+        <p>&copy; 2025 Dr. Oladele Campbell | Niger State Polytechnic, Zungeru, Nigeria</p>
     </footer>
+
+    <!-- JavaScript for Mobile Nav & Back to Top -->
+    <script>
+        // Toggle Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Show/Hide Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Scroll to Top Function
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behaviour: 'smooth' });
+        });
+    </script>
 </body>
 </html>
