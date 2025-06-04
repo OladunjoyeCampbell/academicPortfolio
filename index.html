@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Oladele Campbell – Academic Portfolio</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbTj0k0sR9wlJq4oXpkzXbvoWb+U/jvM+PFTQ3P1JZCx0b9KU3sQxbv7gTQjvWJ5X1o9Q7bkrmWVNZHfxs2hFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-pbTj0k0sR9wlJq4oXpkzXbvoWb+U/jvM+PFTQ3P1JZCx0b9KU3sQxbv7gTQjvWJ5X1o9Q7bkrmWVNZHfxs2hFQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
 
     <style>
         :root {
-            --primary-colour: #005f50;
-            --secondary-colour: #a5d6a7;
-            --background-colour: #f9f9f9;
-            --text-colour: #333;
+            --primary-color: #005f50;
+            --secondary-color: #a5d6a7;
+            --background-color: #f9f9f9;
+            --text-color: #333;
             --card-background: #fff;
             --card-border: #ddd;
-            --button-hover-colour: #7cb342;
+            --button-hover-color: #7cb342;
             --font-family: 'Lato', sans-serif;
         }
 
@@ -30,21 +34,21 @@
             box-sizing: border-box;
         }
         html {
-            scroll-behaviour: smooth;
+            scroll-behavior: smooth;
         }
         body {
             font-family: var(--font-family);
             line-height: 1.6;
-            background-colour: var(--background-colour);
-            colour: var(--text-colour);
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
 
         /* Header */
         header {
-            background-colour: var(--primary-colour);
-            colour: #fff;
+            background-color: var(--primary-color);
+            color: #fff;
             padding: 1.5rem 1rem;
-            text-align: centre;
+            text-align: center;
         }
         header h1 {
             font-size: 2.5rem;
@@ -53,7 +57,7 @@
 
         /* Navigation */
         nav {
-            background-colour: #004d40;
+            background-color: #004d40;
             position: sticky;
             top: 0;
             width: 100%;
@@ -64,11 +68,11 @@
             margin: auto;
             display: flex;
             justify-content: space-between;
-            align-items: centre;
+            align-items: center;
             padding: 0.5rem 1rem;
         }
         .nav-logo {
-            colour: #fff;
+            color: #fff;
             font-size: 1.25rem;
             font-weight: 700;
             text-decoration: none;
@@ -79,7 +83,7 @@
             gap: 1.5rem;
         }
         .nav-links li a {
-            colour: #fff;
+            color: #fff;
             text-decoration: none;
             font-weight: 500;
             transition: text-decoration 0.2s ease-in-out;
@@ -92,7 +96,7 @@
         .nav-toggle {
             display: none;
             font-size: 1.5rem;
-            colour: #fff;
+            color: #fff;
             background: none;
             border: none;
             cursor: pointer;
@@ -106,9 +110,9 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background-colour: #004d40;
+                background-color: #004d40;
                 flex-direction: column;
-                align-items: centre;
+                align-items: center;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease-in-out;
@@ -124,17 +128,17 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.5)
-                ),
-                url('NSP-image.webp') no-repeat centre centre/cover;
+                          to bottom,
+                          rgba(0, 0, 0, 0.5),
+                          rgba(0, 0, 0, 0.5)
+                      ),
+                      url('NSP-image.jpg') no-repeat center center/cover;
             height: 300px;
             display: flex;
-            justify-content: centre;
-            align-items: centre;
-            colour: #fff;
-            text-align: centre;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
             padding: 0 1rem;
         }
         .hero h2 {
@@ -153,7 +157,7 @@
         .section-title {
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            border-bottom: 3px solid var(--secondary-colour);
+            border-bottom: 3px solid var(--secondary-color);
             display: inline-block;
             font-weight: 700;
         }
@@ -188,7 +192,7 @@
             margin-left: 1rem;
         }
         .card a {
-            colour: var(--primary-colour);
+            color: var(--primary-color);
             text-decoration: none;
         }
         .card a:hover {
@@ -201,7 +205,7 @@
             margin-right: 1.5rem;
             width: 180px;
             height: auto;
-            border: 3px solid var(--secondary-colour);
+            border: 3px solid var(--secondary-color);
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             object-fit: cover;
@@ -235,28 +239,28 @@
         }
         form input:focus,
         form textarea:focus {
-            outline: 2px solid var(--secondary-colour);
+            outline: 2px solid var(--secondary-color);
         }
         form button {
             margin-top: 1rem;
             padding: 0.75rem;
-            background-colour: var(--secondary-colour);
-            colour: #fff;
+            background-color: var(--secondary-color);
+            color: #fff;
             border: none;
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background-colour 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out;
         }
         form button:hover {
-            background-colour: var(--button-hover-colour);
+            background-color: var(--button-hover-color);
         }
 
         /* Footer */
         footer {
-            background-colour: #004d40;
-            colour: #fff;
-            text-align: centre;
+            background-color: #004d40;
+            color: #fff;
+            text-align: center;
             padding: 1.5rem 1rem;
             margin-top: 2rem;
         }
@@ -269,22 +273,22 @@
             position: fixed;
             bottom: 2rem;
             right: 2rem;
-            background-colour: var(--primary-colour);
-            colour: #fff;
+            background-color: var(--primary-color);
+            color: #fff;
             border: none;
             border-radius: 50%;
             width: 45px;
             height: 45px;
             font-size: 1.25rem;
             display: none;
-            align-items: centre;
-            justify-content: centre;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
         }
         #back-to-top:hover {
-            background-colour: var(--button-hover-colour);
+            background-color: var(--button-hover-color);
         }
     </style>
 </head>
@@ -323,7 +327,11 @@
         <!-- Curriculum Vitae Section -->
         <section id="cv">
             <h3 class="section-title">Curriculum Vitae</h3>
-            <img src="Oladele-Campbell.webp" alt="Dr. Oladele O. Campbell" title="Profile picture of Dr. Oladele Campbell" class="profile-picture" loading="lazy">
+            <img src="Oladele-Campbell.jpg"
+                 alt="Dr. Oladele O. Campbell"
+                 title="Profile picture of Dr. Oladele Campbell"
+                 class="profile-picture"
+                 loading="lazy" />
             <p>Download my detailed CV <a href="Oladele_Campbell_CV_Current.docx" download>here</a>.</p>
             <div class="card-grid">
                 <article class="card">
@@ -409,10 +417,10 @@
             <div class="card">
                 <form action="https://formspree.io/f/mvggzynv" method="POST">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required />
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required />
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
@@ -437,7 +445,7 @@
             <div class="card-grid">
                 <article class="card">
                     <h4>Presenting at CompEd 2025</h4>
-                    <p>Dr. Campbell will present two research papers at the Global Computing Education Conference (CompEd 2025), to be held 21–25 October 2025 at the University of Botswana, Gaborone:</p>
+                    <p>Dr. Campbell will present two research papers at the Global Computing Education Conference (CompEd 2025), held 21–25 October 2025 at the University of Botswana, Gaborone:</p>
                     <ol>
                         <li><b>The Impostor Phenomenon Among Nigerian Computing Students: A Study of Prevalence, Gender, and Academic Progression</b></li>
                         <li><b>Preliminary Insights into Computer Science Teacher Preparation Programs in Nigerian Universities</b></li>
@@ -468,7 +476,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Dr. Oladele Campbell | Niger State Polytechnic, Zungeru, Nigeria</p>
+        <p>&copy; 2024 Dr. Oladele Campbell | Niger State Polytechnic, Zungeru, Nigeria</p>
     </footer>
 
     <!-- JavaScript for Mobile Nav & Back to Top -->
@@ -492,7 +500,7 @@
 
         // Scroll to Top Function
         backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behaviour: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
