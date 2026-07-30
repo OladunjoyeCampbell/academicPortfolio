@@ -1,0 +1,218 @@
+{
+  "hero": {
+    "statement": "Teaching and advancing computing education equity through empirical research in Nigerian higher education, disseminated globally with African and Western research partners."
+  },
+
+  "impactMetrics": [
+    { "number": "30+", "label": "Years in CS Education", "aria": "Over thirty years of experience in computer science education, teaching since 1995" },
+    { "number": "16", "label": "Publications", "aria": "Sixteen journal articles, conference papers, and a book" },
+    { "number": "2021", "label": "ACM Senior Member Since", "aria": "ACM Senior Member since 2021" },
+    { "number": "100+", "label": "Final-Year Projects Supervised", "aria": "Over one hundred PGD, HND, and ND final-year research projects supervised" }
+  ],
+
+  "professionalMemberships": [
+    { "name": "Senior Member, Association for Computing Machinery (ACM) — since 2011, Senior Member since 2021", "url": "https://www.acm.org/" },
+    { "name": "Member, ACM Special Interest Group on Computer Science Education (SIGCSE) — since 2022", "url": "https://sigcse.org/" },
+    { "name": "Full Member, Nigeria Computer Society — since 2005", "url": "https://www.ncs.org.ng/" }
+  ],
+
+  "researchInterests": [
+    "Computing education in under-resourced African higher education",
+    "Scratch-based and constructionist programming interventions",
+    "Novice programming achievement and gender equity in CS1",
+    "Generative AI in programming education and intelligent tutoring systems",
+    "Impostor phenomenon and professional dispositions in computing students"
+  ],
+
+  "activeResearch": [
+    {
+      "title": "Integrating Professional Dispositions in Nigerian Polytechnic Computing Education",
+      "description": "As Principal Investigator, leading a study developing a framework for enhanced graduate competency — using pre/post-surveys and reflective interventions to assess Meticulousness, collaboration, persistence, and self-directed learning among HND computing students, aligned with ACM CC2020 global competency frameworks. Funded by a ₦3.8M TETFund institutional grant.",
+      "status": "Data collection, entry, and analysis complete · Manuscript in preparation for submission",
+      "isGold": true
+    },
+    {
+      "title": "International Impostor Phenomenon Study I",
+      "description": "Led the Niger State Polytechnic site of an international multi-institutional study examining the impostor phenomenon among computing students, led by Prof. Leo Porter and Sophia Krause-Levy, in collaboration with partner institutions.",
+      "status": "Completed · Co-Investigator",
+      "published": "Conference paper presented at ACM CompEd 2025 (Best Paper Runner-Up); companion article under review at ACM Transactions on Computing Education (TOCE)"
+    },
+    {
+      "title": "International Impostor Phenomenon Study II",
+      "description": "A second multi-institutional impostor phenomenon study led by Prof. Andrew Petersen (University of Toronto), with research instruments deployed on the Multi-Study Research Portal.",
+      "status": "Ongoing · Data collection paused, resuming when students return for second semester at Niger State Polytechnic and partner institutions"
+    },
+    {
+      "title": "AlgoLadder — Bilingual Computational Thinking Tutor",
+      "description": "A bilingual (Hausa-English) computational thinking tutor for low-achieving novice computing students, built into a full multi-study research portal with a Node.js/Express backend and Supabase PostgreSQL database.",
+      "status": "Developed and deployed on the MultiStudy Research Portal, participation of schools solicited, and awaiting second semester resumption in schools for data collection"
+    }
+  ],
+
+  "publications": [
+    {
+      "title": "Multi-Institutional Study on Impostor Phenomenon",
+      "authors": "Krause-Levy, S., Petersen, A., Campbell, O. O., et al.",
+      "venue": "ACM Transactions on Computing Education, 25(4), Article 47",
+      "year": "2025"
+    },
+    {
+      "title": "The Impostor Phenomenon Among Nigerian Computing Students: A Study of Prevalence, Gender, and Academic Progression",
+      "authors": "Campbell, O. O., Krause-Levy, S., Porter, L., Sanusi, I. T., Adelakun-Adeyemo, O.",
+      "venue": "Proc. ACM Global Computing Education Conference (CompEd 2025), Gaborone, Botswana",
+      "year": "2025",
+      "award": "Best Paper Runner-Up",
+      "doi": "10.1145/3736181.3747136"
+    },
+    {
+      "title": "Preliminary Insights into Computer Science Teacher Preparation Programs in Nigerian Universities",
+      "authors": "Sanusi, I. T., Campbell, O. O., Akinrinola, F. Y.",
+      "venue": "Proc. ACM Global Computing Education Conference (CompEd 2025), Gaborone, Botswana",
+      "year": "2025",
+      "doi": "10.1145/3736181.3747141"
+    },
+    {
+      "title": "Exploring Blending Virtual Reality and Traditional Lab Instruction as a Pedagogical Tool: Early Results from Teaching PC Assembly",
+      "authors": "Olade, I., Campbell, O. O., Omeh, C. B.",
+      "venue": "2026 IEEE Global Engineering Education Conference (EDUCON)",
+      "year": "2026"
+    },
+    {
+      "title": "From Visual Arts to Programming: Exploring the Impact on Achievement in Constructionist College CS1 Classes",
+      "authors": "Campbell, O. O., Sanusi, I. T., Atagana, H. I.",
+      "venue": "Proc. 2024 Conference on Innovation and Technology in Computer Science Education (ITiCSE 2024), 604–610",
+      "year": "2024",
+      "doi": "10.1145/3649217.3653597"
+    },
+    {
+      "title": "Computer Programming Education in the Age of Generative AI: Insights from Empirical Research",
+      "authors": "Deriba, F., Sanusi, I. T., Campbell, O. O., Oyelere, S. S.",
+      "venue": "SSRN Working Paper",
+      "year": "2024",
+      "pdf": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=4891302",
+      "doi": "10.2139/ssrn.4891302"
+    },
+    {
+      "title": "A Guided Introduction to C++ Programming: From Basic Concepts to Advanced Techniques for College Students",
+      "authors": "Campbell, O. O., Bake, P., Mohammed, A. A., Dagah, I. A.",
+      "venue": "Ahmadu Bello University (ABU) Press, Zaria. ISBN: 978-978-989-866-4",
+      "year": "2024",
+      "isBook": true
+    },
+    {
+      "title": "The Impacts of a Constructionist Scratch Programming Pedagogy on Student Achievement with a Focus on Gender",
+      "authors": "Campbell, O. O., Adelakun-Adeyemo, O., Akinrinola, F. Y., Chewachong Akih, P., Tshukudu, E., Becker, B. A.",
+      "venue": "Proc. ACM Global Computing Education Conference (CompEd 2023), Hyderabad, India, 29–35",
+      "year": "2023",
+      "doi": "10.1145/3576882.3617911"
+    },
+    {
+      "title": "In Search of Experimental Evidence on Scratch Programming and Students' Achievements in the First-Year College Computing Class? Consider These Datasets",
+      "authors": "Campbell, O. O., Atagana, H. I.",
+      "venue": "Data in Brief, 45, 108635",
+      "year": "2022",
+      "doi": "10.1016/j.dib.2022.108635"
+    },
+    {
+      "title": "Impact of a Scratch Programming Intervention on Student Engagement in a Nigerian Polytechnic First-Year Class: Verdict from the Observers",
+      "authors": "Campbell, O. O., Atagana, H. I.",
+      "venue": "Heliyon, 8(3), e09191",
+      "year": "2022",
+      "doi": "10.1016/j.heliyon.2022.e09191"
+    },
+    {
+      "title": "Effect of GeoGebra Software on Basic Seven Students Learning of Linear Graphs in Ogun State",
+      "authors": "Akintade, C. A., Ogbonnaya, U. I., Mogari, D., Ogunrinade, S., Campbell, O. O.",
+      "venue": "Journal of Science Education (JOSE), 15(1), 95–101",
+      "year": "2021"
+    },
+    {
+      "title": "Improving Novice Programming Education in Nigerian Polytechnics: A Work in Progress",
+      "authors": "Campbell, O.",
+      "venue": "First Annual National Conference of the School of Natural and Applied Sciences, Niger State Polytechnic, Zungeru",
+      "year": "2017"
+    },
+    {
+      "title": "Spectral Analysis and Synthesis of Nupe Counts",
+      "authors": "Isah, A. D., Campbell, O.",
+      "venue": "First Annual National Conference of the School of Natural and Applied Sciences, Niger State Polytechnic, Zungeru",
+      "year": "2017"
+    },
+    {
+      "title": "Enhancing Students' Learning of Latitude and Longitude Through the Use of Computer Assisted Instruction (CAI) in Nigerian Secondary Schools",
+      "authors": "Akintade, C. A., Ogunrinade, S. O., Campbell, O.",
+      "venue": "Educational Research Journal, 8(3), 71–77",
+      "year": "2018"
+    },
+    {
+      "title": "Development of Asphalt Paved Road Pothole Detection System Using Modified Colour Space Approach",
+      "authors": "Isah, A. D., Aibinu, A. M., Olaniyi, O. M., Campbell, O. O.",
+      "venue": "The Journal of Computer Science and Its Applications, 25(2)",
+      "year": "2018"
+    },
+    {
+      "title": "Deployment of Intelligent Tutoring Systems: Algorithms in Computer Science Education",
+      "authors": "Campbell, O.",
+      "venue": "Journal of Humanities, Science and Technology (JOHSAT), 3(2), 38–55",
+      "year": "2013"
+    }
+  ],
+
+  "news": [
+    {
+      "tag": "award",
+      "tagLabel": "Award",
+      "headline": "Best Paper Runner-Up at ACM CompEd 2025",
+      "content": "Recognised among top submissions for \"The Impostor Phenomenon Among Nigerian Computing Students: A Study of Prevalence, Gender, and Academic Progression,\" presented at the ACM Global Computing Education Conference in Gaborone, Botswana."
+    },
+    {
+      "tag": "award",
+      "tagLabel": "Recognition",
+      "headline": "2025 Outstanding Reviewer, ACM SIGCSE Technical Symposium",
+      "content": "Recognised by the conference program chairs for providing high-quality reviews on four research paper manuscripts submitted to the SIGCSE Technical Symposium 2025."
+    },
+    {
+      "tag": "research",
+      "tagLabel": "Research",
+      "headline": "TETFund-Funded Professional Dispositions Study Underway",
+      "content": "Leading a ₦3.8M TETFund-sponsored study as Principal Investigator, developing a framework for integrating professional dispositions into Nigerian polytechnic computing education, aligned with ACM CC2020 competency frameworks."
+    },
+    {
+      "tag": "conf",
+      "tagLabel": "Grant",
+      "headline": "CompEd 2025 African Participation Grant",
+      "content": "Awarded from a highly competitive pool, providing a $150 registration waiver to attend the ACM Global Computing Education Conference (CompEd 2025) in Gaborone, Botswana."
+    }
+  ],
+
+  "contact": {
+    "address": "Department of Computer Science, Niger State Polytechnic, P.O. Box 91, Zungeru, Niger State, Nigeria, 922003",
+    "email": "oladelecampbell@gmail.com",
+    "orcid": "0000-0003-4922-6791",
+    "linkedin": "https://www.linkedin.com/in/oladele-campbell-phd-14131820/",
+    "googlescholar": "https://scholar.google.co.za/citations?hl=en&user=KCm9rG0AAAAJ"
+  },
+
+  "academicProfiles": [
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.co.za/citations?hl=en&user=KCm9rG0AAAAJ",
+      "icon": "https://www.google.com/favicon.ico"
+    },
+    {
+      "name": "ORCID",
+      "url": "https://orcid.org/0000-0003-4922-6791",
+      "icon": "https://orcid.org/favicon.ico"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/oladele-campbell-phd-14131820/",
+      "icon": "https://www.linkedin.com/favicon.ico"
+    },
+    {
+      "name": "ACM Digital Library",
+      "url": "https://dl.acm.org/profile/99661066432",
+      "icon": "https://dl.acm.org/favicon.ico"
+    }
+  ]
+}

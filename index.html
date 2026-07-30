@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Oladele O. Campbell — Academic Portfolio</title>
+  <meta name="description" content="Academic portfolio of Dr. Oladele O. Campbell, Chief Lecturer in Computer Science at Niger State Polytechnic, Zungeru. ACM Senior Member, researcher in CS education, novice programming, and professional dispositions.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Oladele O. Campbell — Academic Portfolio">
+  <meta property="og:description" content="Chief Lecturer · ACM Senior Member · CS Education Researcher · Niger State Polytechnic, Zungeru">
+  <meta property="og:site_name" content="Dr. Oladele Campbell">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Oladele O. Campbell — Academic Portfolio">
+  <meta name="twitter:description" content="Chief Lecturer · ACM Senior Member · CS Education Researcher">
+
+  <link rel="canonical" href="https://csnigerpoly.com/~campbell">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Oladele O. Campbell",
+    "url": "https://csnigerpoly.com/~campbell",
+    "image": "https://csnigerpoly.com/~campbell/Oladele-Campbell.jpg",
+    "jobTitle": "Chief Lecturer",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Niger State Polytechnic, Zungeru"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of South Africa" },
+      { "@type": "CollegeOrUniversity", "name": "University of Ibadan" }
+    ],
+    "sameAs": [
+      "https://scholar.google.co.za/citations?hl=en&user=KCm9rG0AAAAJ",
+      "https://orcid.org/0000-0003-4922-6791",
+      "https://www.linkedin.com/in/oladele-campbell-phd-14131820/",
+      "https://dl.acm.org/profile/99661066432"
+    ],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Association for Computing Machinery (ACM)"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" crossorigin="anonymous" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
+
+  <style>
+    /* ===== TOKENS ===== */
+    :root {
+      --ink:       #1a1208;
+      --ink-2:     #3d3322;
+      --ink-3:     #6b5e4e;
+      --paper:     #faf8f4;
+      --paper-2:   #f2ede4;
+      --paper-3:   #e8e0d2;
+      --gold:      #b8860b;
+      --gold-lt:   #d4a017;
+      --gold-pale: #f9f2df;
+      --teal:      #0d5c63;
+      --teal-lt:   #1a8a94;
+      --teal-pale: #e8f4f5;
+      --red-acad:  #8b1a1a;
+      --border:    rgba(184,134,11,0.2);
+      --shadow-sm: 0 2px 8px rgba(26,18,8,0.06);
+      --shadow:    0 8px 32px rgba(26,18,8,0.09);
+      --shadow-lg: 0 24px 64px rgba(26,18,8,0.12);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-serif:   'Source Serif 4', Georgia, serif;
+      --font-sans:    'DM Sans', system-ui, sans-serif;
+      --nav-h: 60px;
+      --max-w: 1100px;
+    }
+
+    /* ===== RESET & GLOBAL ===== */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body {
+      font-family: var(--font-serif);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    /* ===== SKIP LINK ===== */
+    .skip { position:absolute; top:-100%; left:1rem; background:var(--teal); color:#fff; padding:.5rem 1rem; border-radius:.5rem; font-weight:600; z-index:9999; transition:top .2s; font-family:var(--font-sans) }
+    .skip:focus { top:1rem }
+
+    /* ===== NAVIGATION ===== */
+    .nav {
+      height: var(--nav-h);
+      background: var(--ink);
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      gap: 1rem;
+    }
+    .nav-brand {
+      font-family: var(--font-display);
+      font-size: .95rem;
+      color: var(--gold-lt);
+      text-decoration: none;
+      letter-spacing: .01em;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      gap: .1rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-sans);
+      font-size: .78rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.7);
+      text-decoration: none;
+      padding: .4rem .8rem;
+      border-radius: 2rem;
+      transition: all .18s;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover, .nav-links a[aria-current] {
+      background: rgba(212,160,23,.15);
+      color: var(--gold-lt);
+    }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: .4rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      padding: .4rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .nav-hamburger span { display:block; height:2px; background:#fff; border-radius:2px; transition:all .3s }
+    .nav-hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg) }
+    .nav-hamburger.open span:nth-child(2) { opacity:0 }
+    .nav-hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg) }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: var(--ink);
+      z-index: 290;
+      padding: 1rem 1.5rem 1.5rem;
+      flex-direction: column;
+      gap: .25rem;
+      border-bottom: 2px solid var(--gold);
+    }
+    .mobile-menu.open { display: flex }
+    .mobile-menu a {
+      font-family: var(--font-sans);
+      font-size: .95rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.8);
+      text-decoration: none;
+      padding: .75rem 1rem;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      transition: color .18s;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .mobile-menu a:hover { color: var(--gold-lt) }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 2rem 5rem;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 50%, rgba(13,92,99,.45) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(184,134,11,.12) 0%, transparent 55%);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: .4;
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-sans);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold-lt);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 2rem;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: .75rem;
+      font-weight: 900;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-lt);
+      font-weight: 700;
+    }
+    .hero-title {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 1.5rem;
+      letter-spacing: .01em;
+    }
+    .hero-statement {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.78);
+      max-width: 580px;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+      font-style: italic;
+      border-left: 3px solid var(--gold-lt);
+      padding-left: 1rem;
+      margin-top: 0;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      font-family: var(--font-sans);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 2rem;
+      border: 1px solid;
+    }
+    .badge-gold  { border-color:rgba(212,160,23,.5); color:var(--gold-lt); background:rgba(212,160,23,.08) }
+    .badge-teal  { border-color:rgba(26,138,148,.5); color:#5ecfda; background:rgba(26,138,148,.08) }
+    .badge-white { border-color:rgba(255,255,255,.2); color:rgba(255,255,255,.7); background:rgba(255,255,255,.05) }
+    .hero-ctas {
+      display: flex;
+      gap: .8rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      font-family: var(--font-sans);
+      font-size: .85rem;
+      font-weight: 600;
+      background: var(--gold);
+      color: var(--ink);
+      padding: .65rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: all .2s;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .btn-primary:hover { background:var(--gold-lt); transform:translateY(-2px); box-shadow:0 6px 20px rgba(184,134,11,.35) }
+    .btn-outline {
+      font-family: var(--font-sans);
+      font-size: .85rem;
+      font-weight: 600;
+      background: transparent;
+      color: rgba(255,255,255,.8);
+      padding: .65rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: all .2s;
+      border: 1px solid rgba(255,255,255,.25);
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .btn-outline:hover { background:rgba(255,255,255,.08); transform:translateY(-2px) }
+
+    .hero-photo-wrap { flex-shrink: 0; }
+    .hero-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--gold);
+      box-shadow: 0 0 0 8px rgba(184,134,11,.15), var(--shadow-lg);
+    }
+    .hero-photo-placeholder {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #1a3a40, #0d5c63);
+      border: 4px solid var(--gold);
+      box-shadow: 0 0 0 8px rgba(184,134,11,.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: var(--gold-lt);
+    }
+
+    /* ===== IMPACT STRIP ===== */
+    .impact-strip {
+      background: var(--gold-pale);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .impact-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0;
+    }
+    .impact-item {
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      transition: background .2s;
+    }
+    .impact-item:last-child { border-right: none }
+    .impact-item:hover { background: #f3e8c0 }
+    .impact-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--teal);
+      line-height: 1;
+      margin-bottom: .2rem;
+      font-weight: 700;
+    }
+    .impact-label {
+      font-family: var(--font-sans);
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--ink-3);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    /* ===== LAYOUT ===== */
+    .wrap {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    section { padding: 4rem 0; scroll-margin-top: calc(var(--nav-h) + .5rem) }
+    section + section { border-top: 1px solid var(--paper-3) }
+
+    /* ===== SECTION HEADER ===== */
+    .sec-head { margin-bottom: 2.5rem }
+    .sec-label {
+      font-family: var(--font-sans);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .5rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .sec-label::after { content:''; flex:1; height:1px; background:var(--border) }
+    .sec-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--ink);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+    .sec-sub {
+      font-family: var(--font-sans);
+      font-size: .9rem;
+      color: var(--ink-3);
+      margin-top: .5rem;
+    }
+
+    /* ===== CARDS ===== */
+    .grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem }
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.75rem;
+      border: 1px solid var(--paper-3);
+      box-shadow: var(--shadow-sm);
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+    }
+    .card:hover { transform:translateY(-3px); box-shadow:var(--shadow); border-color:var(--border) }
+    .card h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: .6rem;
+      line-height: 1.3;
+    }
+    .card p, .card li {
+      font-family: var(--font-sans);
+      font-size: .88rem;
+      color: var(--ink-2);
+      line-height: 1.65;
+    }
+    .card ul { list-style: none; padding: 0 }
+    .card ul li {
+      padding: .35rem 0;
+      border-bottom: 1px solid var(--paper-3);
+      display: flex;
+      align-items: flex-start;
+      gap: .5rem;
+    }
+    .card ul li:last-child { border-bottom: none }
+    .card ul li::before { content:'→'; color:var(--gold); font-size:.75rem; flex-shrink:0; margin-top:.2rem }
+    .card a { color:var(--teal); text-decoration:none }
+    .card a:hover { text-decoration:underline; color:var(--teal-lt) }
+
+    .card-accent {
+      background: linear-gradient(135deg, var(--teal), #0a4a50);
+      color: #fff;
+      border-color: transparent;
+    }
+    .card-accent h4 { color:#fff }
+    .card-accent p, .card-accent li { color:rgba(255,255,255,.82) }
+    .card-accent ul li::before { color:var(--gold-lt) }
+    .card-accent ul li { border-color:rgba(255,255,255,.1) }
+    .card-accent a { color:var(--gold-lt) }
+
+    .card-gold {
+      background: linear-gradient(135deg, var(--ink), var(--ink-2));
+      color: #fff;
+      border-color: var(--gold);
+    }
+    .card-gold h4 { color:var(--gold-lt) }
+    .card-gold p { color:rgba(255,255,255,.75) }
+
+    /* ===== ABOUT ===== */
+    .about-grid { display:grid; grid-template-columns:auto 1fr; gap:3rem; align-items:start }
+    .about-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 1rem;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+      box-shadow: var(--shadow);
+      flex-shrink: 0;
+    }
+    .about-photo-placeholder {
+      width: 160px;
+      height: 160px;
+      border-radius: 1rem;
+      background: linear-gradient(145deg, var(--teal-pale), #c8e8eb);
+      border: 3px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      flex-shrink: 0;
+    }
+    .about-text p {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--ink-2);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .cv-download {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: var(--font-sans);
+      font-size: .85rem;
+      font-weight: 600;
+      background: var(--teal);
+      color: #fff;
+      padding: .6rem 1.4rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: all .2s;
+      margin-top: .5rem;
+    }
+    .cv-download:hover { background:var(--teal-lt); transform:translateY(-1px) }
+    .timeline { margin-top: 1.5rem }
+    .tl-item {
+      display: flex;
+      gap: 1.2rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--paper-3);
+      position: relative;
+    }
+    .tl-item:last-child { border-bottom:none }
+    .tl-year {
+      font-family: var(--font-sans);
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--gold);
+      width: 4rem;
+      flex-shrink: 0;
+      padding-top: .15rem;
+    }
+    .tl-content h5 {
+      font-family: var(--font-sans);
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: .15rem;
+    }
+    .tl-content p {
+      font-family: var(--font-sans);
+      font-size: .8rem;
+      color: var(--ink-3);
+    }
+
+    /* ===== PUBLICATIONS ===== */
+    .pub-item {
+      background: #fff;
+      border-radius: .75rem;
+      padding: 1.4rem 1.6rem;
+      border: 1px solid var(--paper-3);
+      border-left: 4px solid var(--teal);
+      margin-bottom: 1rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .pub-item:hover { border-left-color:var(--gold); box-shadow:var(--shadow-sm) }
+    .pub-item.award { border-left-color:var(--gold) }
+    .pub-award-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      font-family: var(--font-sans);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      background: var(--gold-pale);
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: .2rem .65rem;
+      border-radius: 2rem;
+      margin-bottom: .5rem;
+    }
+    .pub-title {
+      font-family: var(--font-serif);
+      font-size: .97rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: .3rem;
+    }
+    .pub-authors {
+      font-family: var(--font-sans);
+      font-size: .78rem;
+      color: var(--ink-3);
+      margin-bottom: .3rem;
+    }
+    .pub-authors strong { color:var(--teal); font-weight:600 }
+    .pub-venue {
+      font-family: var(--font-sans);
+      font-size: .78rem;
+      color: var(--ink-3);
+      font-style: italic;
+    }
+    .pub-links {
+      display: flex;
+      gap: .5rem;
+      margin-top: .6rem;
+      flex-wrap: wrap;
+    }
+    .pub-link {
+      font-family: var(--font-sans);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: .2rem .65rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: all .18s;
+    }
+    .pub-link-doi  { background:var(--teal-pale); color:var(--teal); border:1px solid rgba(13,92,99,.2) }
+    .pub-link-pdf  { background:#fce8e8; color:var(--red-acad); border:1px solid rgba(139,26,26,.2) }
+    .pub-link-doi:hover  { background:var(--teal); color:#fff }
+    .pub-link-pdf:hover  { background:var(--red-acad); color:#fff }
+
+    /* ===== PROFILES ===== */
+    .profiles-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .profile-chip {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      background: #fff;
+      border: 1px solid var(--paper-3);
+      border-radius: 2rem;
+      padding: .5rem 1rem .5rem .5rem;
+      text-decoration: none;
+      transition: all .2s;
+      box-shadow: var(--shadow-sm);
+    }
+    .profile-chip:hover { border-color:var(--gold); transform:translateY(-2px); box-shadow:var(--shadow) }
+    .profile-chip img {
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile-chip-label {
+      font-family: var(--font-sans);
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ===== NEWS ===== */
+    .news-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid var(--paper-3);
+      box-shadow: var(--shadow-sm);
+      transition: all .25s;
+    }
+    .news-card:hover { transform:translateY(-3px); box-shadow:var(--shadow); border-color:var(--border) }
+    .news-tag {
+      font-family: var(--font-sans);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .2rem .65rem;
+      border-radius: 2rem;
+      margin-bottom: .6rem;
+      display: inline-block;
+    }
+    .tag-conf    { background:var(--teal-pale); color:var(--teal) }
+    .tag-research{ background:var(--gold-pale); color:var(--gold) }
+    .tag-book    { background:#fce8e8; color:var(--red-acad) }
+    .tag-award   { background:#f3e8ff; color:#6b21a8 }
+    .news-card h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: .5rem;
+      line-height: 1.3;
+    }
+    .news-card p {
+      font-family: var(--font-sans);
+      font-size: .83rem;
+      color: var(--ink-2);
+      line-height: 1.6;
+    }
+    .news-card a { color:var(--teal); text-decoration:none }
+    .news-card a:hover { text-decoration:underline }
+
+    /* ===== CONTACT FORM ===== */
+    .contact-grid { display:grid; grid-template-columns:1fr 1.5fr; gap:2rem; align-items:start }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .8rem;
+      padding: .8rem 0;
+      border-bottom: 1px solid var(--paper-3);
+    }
+    .contact-info-item:last-child { border-bottom:none }
+    .contact-icon {
+      width: 2.2rem;
+      height: 2.2rem;
+      background: var(--teal-pale);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .85rem;
+      color: var(--teal);
+      flex-shrink: 0;
+    }
+    .contact-info-item p {
+      font-family: var(--font-sans);
+      font-size: .85rem;
+      color: var(--ink-2);
+      line-height: 1.5;
+    }
+    .contact-info-item a { color:var(--teal); text-decoration:none }
+    .contact-info-item a:hover { text-decoration:underline }
+    .form-label {
+      font-family: var(--font-sans);
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--ink-2);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      display: block;
+      margin-bottom: .3rem;
+      margin-top: 1rem;
+    }
+    .form-label:first-child { margin-top:0 }
+    .form-input {
+      width: 100%;
+      padding: .65rem 1rem;
+      border: 1px solid var(--paper-3);
+      border-radius: .5rem;
+      font-family: var(--font-sans);
+      font-size: .88rem;
+      background: var(--paper);
+      color: var(--ink);
+      transition: border .2s, box-shadow .2s;
+    }
+    .form-input:focus { outline:none; border-color:var(--teal); box-shadow:0 0 0 3px rgba(13,92,99,.1) }
+    .form-btn {
+      margin-top: 1.2rem;
+      width: 100%;
+      padding: .75rem;
+      background: var(--teal);
+      color: #fff;
+      border: none;
+      border-radius: .5rem;
+      font-family: var(--font-sans);
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .form-btn:hover { background:var(--teal-lt); transform:translateY(-1px) }
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      display: none;
+    }
+    .form-status.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; display: block; }
+    .form-status.error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; display: block; }
+
+    /* ===== LOADING SKELETON ===== */
+    .skeleton-block {
+      height: 3.5rem;
+      border-radius: .75rem;
+      margin-bottom: .75rem;
+      background: linear-gradient(90deg, var(--paper-3) 25%, var(--paper-2) 50%, var(--paper-3) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    #btt {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 2.6rem;
+      height: 2.6rem;
+      background: var(--ink);
+      color: var(--gold-lt);
+      border: 1px solid rgba(212,160,23,.3);
+      border-radius: 50%;
+      font-size: 1rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      z-index: 400;
+      transition: all .2s;
+    }
+    #btt:hover { background:var(--teal); border-color:transparent }
+    #btt.visible { display:flex }
+
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,.5);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: .8rem;
+      line-height: 1.8;
+    }
+    footer a { color:var(--gold-lt); text-decoration:none }
+    footer a:hover { text-decoration:underline }
+    .footer-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: .3rem;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .fade-up.in { opacity:1; transform:none }
+
+    @media print {
+      .nav,.mobile-menu,.hero-ctas,.impact-strip,#btt,footer,
+      .cv-download,.pub-links,.form-btn { display:none!important }
+      body { background:#fff; color:#000; font-size:11pt }
+      .card { box-shadow:none; border:1px solid #ccc; break-inside:avoid }
+      section { padding:1.5rem 0 }
+      .pub-item { border-left:3px solid #333 }
+    }
+    @media(max-width:900px) {
+      .hero-inner { grid-template-columns:1fr }
+      .hero-photo-wrap { display:none }
+      .impact-inner { grid-template-columns:repeat(2,1fr) }
+      .impact-item:nth-child(2) { border-right:none }
+      .grid-2,.grid-3 { grid-template-columns:1fr }
+      .about-grid { grid-template-columns:1fr }
+      .about-photo,.about-photo-placeholder { display:none }
+      .contact-grid { grid-template-columns:1fr }
+    }
+    @media(max-width:680px) {
+      .nav-links { display:none }
+      .nav-hamburger { display:flex }
+      .hero { padding:4rem 1.25rem 3rem }
+      .wrap { padding:0 1rem }
+      section { padding:3rem 0 }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a href="#home" class="nav-brand">Dr. Oladele Campbell</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#projects">Projects</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<section class="hero" id="home" aria-labelledby="hero-name">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Academic Portfolio · Niger State Polytechnic, Zungeru</div>
+      <h1 id="hero-name">Dr. <em>Oladele O.</em> Campbell</h1>
+      <p class="hero-title">Chief Lecturer in Computer Science &nbsp;·&nbsp; ACM Senior Member &nbsp;·&nbsp; PhD (UNISA, 2022)</p>
+      <blockquote id="hero-statement" class="hero-statement" cite="https://csnigerpoly.com">Advancing computing education research and practice across African higher education.</blockquote>
+      <div class="hero-badges">
+        <span class="badge badge-gold">ACM Senior Member</span>
+        <span class="badge badge-teal">CompEd 2025 Best Paper Runner-Up</span>
+        <span class="badge badge-white">30 Years in CS Education</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="Oladele_Campbell_CV_Current_29012026.pdf" download class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+        <a href="#research" class="btn-outline"><i class="fa-solid fa-microscope"></i> Research</a>
+        <a href="#contact" class="btn-outline"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap" aria-hidden="true">
+      <img src="Oladele-Campbell.jpg" alt="Dr. Oladele O. Campbell" class="hero-photo" loading="eager" onerror="this.style.display='none';document.getElementById('hero-placeholder').style.display='flex'">
+      <div class="hero-photo-placeholder" id="hero-placeholder" style="display:none">👨🏾‍🏫</div>
+    </div>
+  </div>
+</section>
+
+<div class="impact-strip" role="region" aria-label="Academic impact metrics">
+  <div id="impact-container" class="impact-inner"></div>
+</div>
+
+<main id="main">
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">About</div>
+        <h2 class="sec-title">Curriculum Vitae &amp; Profile</h2>
+        <p class="sec-sub">Three decades shaping computing education in Nigeria</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <img src="Oladele-Campbell.jpg" alt="Dr. Oladele O. Campbell" class="about-photo" loading="lazy"
+            onerror="this.style.display='none';document.getElementById('about-placeholder').style.display='flex'">
+          <div class="about-photo-placeholder" id="about-placeholder" style="display:none">👨🏾‍🏫</div>
+        </div>
+        <div class="about-text">
+          <p>Dr. Oladele O. Campbell is a Chief Lecturer in the Department of Computer Science at Niger State Polytechnic, Zungeru, Nigeria — a department he founded with other colleagues and led as pioneer Head of Department from 2008 to 2012. With over three decades of experience in computing education, administration, and research, he earned a PhD in Computer Science Education from University of South Africa (2022), following earlier degrees in Computer Science — an MSc (2003) and BSc (1994) from University of Ibadan.</p>
+          <p>Dr. Campbell was recognized as an ACM Senior Member in 2021 and was appointed to the Regional Advisory Committee for ACM CompEd 2025. Dr. Campbell's research sits at the intersection of computing education, novice programming, and equity — with a particular focus on African higher education contexts. His 2025 paper on the impostor phenomenon among Nigerian computing students received the Best Paper Runner-Up award at the ACM Global Computing Education Conference in Gaborone, Botswana.</p>
+          <a href="Oladele_Campbell_CV_Current_29012026.pdf" download class="cv-download"><i class="fa-solid fa-file-pdf"></i> Download Full CV (PDF)</a>
+          <div class="timeline" aria-label="Education timeline">
+            <div class="tl-item fade-up"><div class="tl-year">2022</div><div class="tl-content"><h5>PhD — Computer Science Education</h5><p>University of South Africa (UNISA)</p></div></div>
+            <div class="tl-item fade-up"><div class="tl-year">2003</div><div class="tl-content"><h5>MSc — Computer Science</h5><p>University of Ibadan</p></div></div>
+            <div class="tl-item fade-up"><div class="tl-year">1994</div><div class="tl-content"><h5>BSc — Computer Science</h5><p>University of Ibadan</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top:2rem">
+        <div id="memberships-card" class="card card-accent fade-up"><h4>Professional Memberships</h4><ul id="memberships-list"></ul></div>
+        <div class="card fade-up"><h4>Research Interests</h4><ul id="research-interests-list"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" style="background:var(--paper-2)">
+    <div class="wrap">
+      <div class="sec-head"><div class="sec-label">Research</div><h2 class="sec-title">Active Research</h2><p class="sec-sub">Current investigations and ongoing projects</p></div>
+      <div id="active-research-container" class="grid-2"></div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="wrap">
+      <div class="sec-head"><div class="sec-label">Scholarship</div><h2 class="sec-title">Publications &amp; Works</h2><p class="sec-sub">Selected peer-reviewed journal articles, conference proceedings, and book</p></div>
+      <div id="publications-container"></div>
+      <div class="sec-head" style="margin-top:2.5rem;margin-bottom:1rem"><div class="sec-label">Academic Profiles</div></div>
+      <div id="profile-links" class="profiles-grid"></div>
+    </div>
+  </section>
+
+  <section id="projects" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Projects</div>
+      <h2 class="sec-title">Software &amp; Development Projects</h2>
+      <p class="sec-sub">Full-stack systems built to solve real institutional problems</p>
+    </div><div class="grid-2">
+  <!-- Project 1: Department Website -->
+  <div class="card fade-up">
+    <h4>Department of Computer Science Website</h4>
+    <p style="margin-bottom:.8rem">A world-class single-file departmental website powered entirely by Google Sheets as a live backend. All content — staff, news, events, documents, alumni — updates instantly when staff edit a Google Sheet. Built as sole designer, developer, and project lead.</p>
+    <ul>
+      <li>Dynamic settings sheet for stats, WhatsApp, contact details — zero code changes needed</li>
+      <li>Password-protected admin panel: create, edit, delete calendar events synced to Google Calendar</li>
+      <li>Skeleton loaders, dark mode, mobile hamburger menu, countdown badges, print stylesheet</li>
+      <li>Alumni registration, student project showcase, upcoming events with Nigerian WAT time</li>
+      <li><strong>Stack:</strong> HTML5/CSS3/Vanilla JS · Google Apps Script · Google Calendar API · Cloudflare Pages · GitHub</li>
+    </ul>
+    <div style="display:flex; gap:0.8rem; flex-wrap:wrap; margin-top:1rem">
+      <a href="https://csnigerpoly.com" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:.78rem; padding:.45rem 1rem">
+        <i class="fa-solid fa-external-link-alt"></i> Live Site
+      </a>
+      <a href="https://github.com/OladunjoyeCampbell/csnigerpolysite" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:.78rem; padding:.45rem 1rem; background:#24292e;">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 2: Capstone Project Portal -->
+  <div class="card fade-up">
+    <h4>Capstone Project Portal</h4>
+    <p style="margin-bottom:.8rem">End-to-end management of final-year projects: topic submission, supervisor clearance, payment tracking, panel acceptance, and automated email notifications — all without a traditional database.</p>
+    <ul>
+      <li>Role-based dashboards: student, supervisor, coordinator</li>
+      <li>Real-time topic uniqueness check, drop/resubmit, full audit log</li>
+      <li>Secure token-based password reset (30‑minute expiry)</li>
+      <li>Automated email alerts via Resend API for all workflow stages</li>
+      <li><strong>Stack:</strong> Flask · gspread (Google Sheets API) · Bootstrap 5 · Resend · Render</li>
+    </ul>
+    <div style="display:flex; gap:0.8rem; flex-wrap:wrap; margin-top:1rem">
+      <a href="https://finalyearprojectsportal.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:.78rem; padding:.45rem 1rem">
+        <i class="fa-solid fa-external-link-alt"></i> Live Portal
+      </a>
+      <a href="https://github.com/OladunjoyeCampbell/FinalYearProject" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:.78rem; padding:.45rem 1rem; background:#24292e;">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 3: Research Participation Portal -->
+<div class="card fade-up">
+  <h4>Research Participation Portal</h4>
+  <p style="margin-bottom:.8rem">A multi‑study web platform for computing education research. Enables researchers to deploy custom studies with surveys, pre/post‑tests, interactive puzzles, bilingual instruction, weekly reflections, automatic resume, and certificate generation. Currently hosts three active studies, with a flexible architecture that supports both JSON‑driven configuration and custom extensions for advanced study designs.</p>
+  <ul>
+    <li>
+      <strong>AlgoLadder</strong> – bilingual computational thinking tutor with pre/post‑tests and a 7‑day delayed post‑test. Participants learn algorithm design through scaffolded puzzles.
+    </li>
+    <li>
+      <strong>Impostor Phenomenon</strong> – survey‑only study (Clance IP Scale, MSLQ, engagement &amp; belonging) adapted to the Nigerian context from an international multi‑institutional study led by Prof. Andrew Petersen (University of Toronto Mississauga).
+    </li>
+    <li>
+      <strong>Professional Dispositions</strong> – new study examining collaborative, meticulous, persistent, and self‑directed behaviours. Features a pre‑survey, four weekly time‑locked reflections (each with Likert and open‑ended questions), and a post‑survey. Completed studies are automatically filtered from the "My Certificates" page until all phases are done.
+    </li>
+    <li>
+      <strong>Recent enhancements:</strong> weekly reflection time‑locking with DD/MM/YYYY date display for Nigerian participants; dynamic institution/programme drop‑downs (with fallback lists); robust resume logic that restores reflection week and post‑survey answers; inline certificate download/print handlers for reliable operation across all studies.
+    </li>
+    <li>JSON‑driven study configurations for standard survey and puzzle studies; the platform is extensible to support custom phases (e.g., weekly reflections) with minimal code additions.</li>
+    <li>Global registration, automatic resume across sessions, admin dashboard with statistics, enrolment control, and email reminders.</li>
+    <li>Ethics‑ready: consent, anonymisation, randomisation, attention checks.</li>
+    <li><strong>Stack:</strong> Node.js · Express · Supabase PostgreSQL · Vanilla JS · HTML5/CSS3 · Render</li>
+  </ul>
+  <div style="display:flex; gap:0.8rem; flex-wrap:wrap; margin-top:1rem">
+    <a href="https://research-portalc.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:.78rem; padding:.45rem 1rem">
+      <i class="fa-solid fa-external-link-alt"></i> Live Portal
+    </a>
+    <a href="https://github.com/OladunjoyeCampbell/research-portalC" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size:.78rem; padding:.45rem 1rem; background:#24292e;">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+  <section id="news">
+    <div class="wrap">
+      <div class="sec-head"><div class="sec-label">News &amp; Updates</div><h2 class="sec-title">Recent Activity</h2><p class="sec-sub">Conferences, publications, and ongoing work</p></div>
+      <div id="news-container" class="grid-3"></div>
+    </div>
+  </section>
+
+  <section id="contact" style="background:var(--paper-2)">
+    <div class="wrap">
+      <div class="sec-head"><div class="sec-label">Contact</div><h2 class="sec-title">Get in Touch</h2><p class="sec-sub">Research collaborations, speaking invitations, or general enquiries</p></div>
+      <div class="contact-grid">
+        <div id="contact-info-container"></div>
+        <div class="card"><h4 style="margin-bottom:1rem">Send a Message</h4>
+          <form id="contactForm" action="https://formspree.io/f/mvggzynv" method="POST">
+            <label class="form-label" for="name">Name</label><input class="form-input" type="text" id="name" name="name" required placeholder="Your full name">
+            <label class="form-label" for="email">Email</label><input class="form-input" type="email" id="email" name="email" required placeholder="your@email.com">
+            <label class="form-label" for="subject">Subject</label><input class="form-input" type="text" id="subject" name="subject" placeholder="Research collaboration, speaking invitation…">
+            <label class="form-label" for="message">Message</label><textarea class="form-input" id="message" name="message" rows="5" required placeholder="Your message…" style="border-radius:.5rem;resize:vertical"></textarea>
+            <button type="submit" class="form-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button id="btt" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<footer>
+  <div class="footer-name">Dr. Oladele O. Campbell</div>
+  <p>Chief Lecturer · Department of Computer Science · Niger State Polytechnic, Zungeru, Nigeria</p>
+  <p style="margin-top:.5rem"><a href="https://scholar.google.co.za/citations?hl=en&user=KCm9rG0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> &nbsp;·&nbsp; <a href="https://orcid.org/0000-0003-4922-6791" target="_blank" rel="noopener noreferrer">ORCID</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/oladele-campbell-phd-14131820/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;·&nbsp; <a href="https://dl.acm.org/profile/99661066432" target="_blank" rel="noopener noreferrer">ACM DL</a></p>
+  <p style="margin-top:1rem;font-size:.75rem;color:rgba(255,255,255,.3)">&copy; 2026 Dr. Oladele O. Campbell · All rights reserved</p>
+</footer>
+
+<script>
+// ---- Data loading and rendering ----
+let siteData = {};
+
+showLoadingState();
+
+fetch('data.json')
+  .then(response => {
+    if (!response.ok) throw new Error('data.json returned ' + response.status);
+    return response.json();
+  })
+  .then(data => {
+    siteData = data;
+    renderAll();
+  })
+  .catch(error => {
+    console.error('Error loading data.json:', error);
+    showErrorState();
+  });
+
+function showLoadingState() {
+  const ids = ['impact-container', 'memberships-list', 'research-interests-list',
+               'active-research-container', 'publications-container', 'news-container'];
+  ids.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = '<div class="skeleton-block"></div>'.repeat(3);
+  });
+}
+
+function showErrorState() {
+  const container = document.getElementById('publications-container');
+  if (container) {
+    container.innerHTML = `
+      <div class="card" style="text-align:center;padding:2rem">
+        <p style="margin-bottom:.8rem">Content couldn't load right now.</p>
+        <button onclick="location.reload()" class="btn-primary" style="border:none;cursor:pointer">
+          <i class="fa-solid fa-rotate-right"></i> Retry
+        </button>
+      </div>`;
+  }
+  // Also clear skeletons elsewhere so they don't spin forever
+  ['impact-container','memberships-list','research-interests-list',
+   'active-research-container','news-container'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = '';
+  });
+}
+
+function renderAll() {
+  if (!siteData) return;
+  
+  // Hero statement
+  const heroBlock = document.getElementById('hero-statement');
+  if (heroBlock && siteData.hero) heroBlock.textContent = siteData.hero.statement;
+
+  // Impact strip
+  const impactContainer = document.getElementById('impact-container');
+  if (impactContainer && siteData.impactMetrics) {
+    impactContainer.innerHTML = siteData.impactMetrics.map(m => `
+      <div class="impact-item" aria-label="${m.aria}">
+        <div class="impact-num">${m.number}</div>
+        <div class="impact-label">${m.label}</div>
+      </div>
+    `).join('');
+  }
+
+  // Professional memberships
+  const membershipsList = document.getElementById('memberships-list');
+  if (membershipsList && siteData.professionalMemberships) {
+    membershipsList.innerHTML = siteData.professionalMemberships.map(m => `<li><a href="${m.url}" target="_blank" rel="noopener noreferrer">${m.name}</a></li>`).join('');
+  }
+
+  // Research interests
+  const researchInterestsList = document.getElementById('research-interests-list');
+  if (researchInterestsList && siteData.researchInterests) {
+    researchInterestsList.innerHTML = siteData.researchInterests.map(interest => `<li>${interest}</li>`).join('');
+  }
+
+  // Active research cards
+  const activeResearchContainer = document.getElementById('active-research-container');
+  if (activeResearchContainer && siteData.activeResearch) {
+    activeResearchContainer.innerHTML = siteData.activeResearch.map(r => `
+      <div class="card ${r.isGold ? 'card-gold' : ''} fade-up">
+        <h4>${r.title}</h4>
+        <p style="margin-bottom:.8rem">${r.description}</p>
+        ${r.status ? `<p><strong style="color:${r.isGold ? 'var(--gold-lt)' : 'var(--gold)'}">Status:</strong> <span style="color:${r.isGold ? 'rgba(255,255,255,.7)' : 'var(--ink-2)'}">${r.status}</span></p>` : ''}
+        ${r.published ? `<p><strong style="color:var(--teal)">Published:</strong> ${r.published}</p>` : ''}
+      </div>
+    `).join('');
+    observeFadeUp();
+  }
+
+  // Publications
+  const pubsContainer = document.getElementById('publications-container');
+  if (pubsContainer && siteData.publications) {
+    pubsContainer.innerHTML = siteData.publications.map(pub => {
+      let awardHtml = pub.award ? `<div class="pub-award-badge">🏆 ${pub.award}</div>` : '';
+      let isBookHtml = pub.isBook ? `<div class="pub-award-badge" style="background:#fce8e8;color:var(--red-acad);border-color:rgba(139,26,26,.2)">📖 Book</div>` : '';
+      let doiHtml = pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-doi">DOI ↗</a>` : '';
+      let pdfHtml = pub.pdf ? `<a href="${pub.pdf}" target="_blank" rel="noopener noreferrer" class="pub-link pub-link-pdf">PDF ↗</a>` : '';
+      return `
+        <div class="pub-item ${pub.award ? 'award' : ''} fade-up">
+          ${awardHtml || isBookHtml}
+          <div class="pub-title">${pub.title}</div>
+          <div class="pub-authors"><strong>${pub.authors.replace(/(Campbell, O\. O\.)/, '<strong>$1</strong>')}</strong></div>
+          <div class="pub-venue">${pub.venue} ${pub.year ? `· ${pub.year}` : ''}</div>
+          <div class="pub-links">${doiHtml} ${pdfHtml}</div>
+        </div>
+      `;
+    }).join('');
+    observeFadeUp();
+  }
+
+  // News
+  const newsContainer = document.getElementById('news-container');
+  if (newsContainer && siteData.news) {
+    newsContainer.innerHTML = siteData.news.map(item => {
+      let tagClass = '';
+      if (item.tag === 'award') tagClass = 'tag-award';
+      else if (item.tag === 'conf') tagClass = 'tag-conf';
+      else if (item.tag === 'research') tagClass = 'tag-research';
+      else if (item.tag === 'book') tagClass = 'tag-book';
+      let linksHtml = '';
+      if (item.links) {
+        linksHtml = `<p style="margin-top:.5rem">${item.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer">${l.text}</a>`).join(' · ')}</p>`;
+      }
+      if (item.downloadLink) {
+        linksHtml = `<p style="margin-top:.5rem"><a href="${item.downloadLink}" download>Download PDF ↗</a></p>`;
+      }
+      if (item.externalLink) {
+        linksHtml = `<p style="margin-top:.5rem"><a href="${item.externalLink}" target="_blank" rel="noopener noreferrer">Read more ↗</a></p>`;
+      }
+      return `
+        <div class="news-card fade-up">
+          <span class="news-tag ${tagClass}">${item.tagLabel}</span>
+          <h4>${item.headline}</h4>
+          <p>${item.content}</p>
+          ${linksHtml}
+        </div>
+      `;
+    }).join('');
+    observeFadeUp();
+  }
+
+  // Contact info
+  const contactInfoContainer = document.getElementById('contact-info-container');
+  if (contactInfoContainer && siteData.contact) {
+    contactInfoContainer.innerHTML = `
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-building-columns"></i></div><p>${siteData.contact.address}</p></div>
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><p><a href="mailto:${siteData.contact.email}">${siteData.contact.email}</a></p></div>
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-brands fa-orcid"></i></div><p><a href="https://orcid.org/${siteData.contact.orcid}" target="_blank" rel="noopener noreferrer">ORCID: ${siteData.contact.orcid}</a></p></div>
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div><p><a href="${siteData.contact.linkedin}" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p></div>
+      <div class="contact-info-item"><div class="contact-icon"><i class="fa-solid fa-graduation-cap"></i></div><p><a href="${siteData.contact.googlescholar}" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a></p></div>
+    `;
+  }
+
+  // Academic profiles (dynamic from JSON)
+  const profileLinksContainer = document.getElementById('profile-links');
+  if (profileLinksContainer && siteData.academicProfiles) {
+    profileLinksContainer.innerHTML = siteData.academicProfiles.map(profile => `
+      <a href="${profile.url}" target="_blank" rel="noopener noreferrer" class="profile-chip">
+        <img src="${profile.icon}" alt="${profile.name} icon" loading="lazy">
+        <span class="profile-chip-label">${profile.name}</span>
+      </a>
+    `).join('');
+  }
+}
+
+// Helper to observe fade-up elements added dynamically
+function observeFadeUp() {
+  const fadeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); fadeObs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up:not(.in)').forEach(el => fadeObs.observe(el));
+}
+
+// ---- Navigation, hamburger, back to top, form handling ----
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileLinks = mobileMenu.querySelectorAll("a");
+
+function trapFocus(element) {
+  if (!element.classList.contains('open')) return;
+  const focusable = element.querySelectorAll('a, button, [tabindex="0"]');
+  if (focusable.length === 0) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  element.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  });
+}
+
+hamburger.addEventListener("click", () => {
+  const open = mobileMenu.classList.toggle("open");
+  hamburger.classList.toggle("open", open);
+  hamburger.setAttribute("aria-expanded", open);
+  if (open) {
+    mobileLinks[0]?.focus();
+    trapFocus(mobileMenu);
+  }
+});
+mobileLinks.forEach(a => {
+  a.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    hamburger.classList.remove("open");
+    hamburger.setAttribute("aria-expanded","false");
+  });
+});
+document.addEventListener("click", e => {
+  if (!mobileMenu.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) {
+    mobileMenu.classList.remove("open");
+    hamburger.classList.remove("open");
+    hamburger.setAttribute("aria-expanded","false");
+  }
+});
+
+const sections = document.querySelectorAll("section[id], div[id='home']");
+const navAs = document.querySelectorAll(".nav-links a");
+const navObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navAs.forEach(a => {
+        a.removeAttribute("aria-current");
+        if (a.getAttribute("href") === "#" + e.target.id) a.setAttribute("aria-current","true");
+      });
+    }
+  });
+}, { rootMargin:"-50% 0px -50% 0px" });
+sections.forEach(s => navObs.observe(s));
+
+const btt = document.getElementById("btt");
+window.addEventListener("scroll", () => btt.classList.toggle("visible", window.pageYOffset > 400));
+btt.addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
+
+const fadeObsStatic = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); fadeObsStatic.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll(".fade-up").forEach((el, i) => {
+  el.style.transitionDelay = (i % 4) * 0.07 + "s";
+  fadeObsStatic.observe(el);
+});
+
+// AJAX Form
+const form = document.getElementById('contactForm');
+const statusDiv = document.getElementById('formStatus');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  statusDiv.innerHTML = '';
+  statusDiv.className = 'form-status';
+  const formData = new FormData(form);
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      statusDiv.textContent = '✅ Message sent successfully! I will respond as soon as possible.';
+      statusDiv.classList.add('success');
+      form.reset();
+    } else {
+      const data = await response.json();
+      statusDiv.textContent = data.error || '❌ Something went wrong. Please try again later.';
+      statusDiv.classList.add('error');
+    }
+  } catch (err) {
+    statusDiv.textContent = '❌ Network error. Please check your connection and try again.';
+    statusDiv.classList.add('error');
+  }
+});
+</script>
+</body>
+</html>
