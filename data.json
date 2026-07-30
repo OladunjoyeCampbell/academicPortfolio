@@ -27,7 +27,7 @@
   "activeResearch": [
     {
       "title": "Integrating Professional Dispositions in Nigerian Polytechnic Computing Education",
-      "description": "As Principal Investigator, leading a study developing a framework for enhanced graduate competency — using pre/post-surveys and reflective interventions to assess Meticulousness, collaboration, persistence, and self-directed learning among HND computing students, aligned with ACM CC2020 global competency frameworks. Funded by a ₦3.8M TETFund institutional grant.",
+      "description": "As Principal Investigator, leading a study developing a framework for enhanced graduate competency — using pre/post-surveys and reflective interventions to assess adaptability, collaboration, persistence, and self-directed learning among HND computing students, aligned with ACM CC2020 global competency frameworks. Funded by a ₦3.8M TETFund institutional grant.",
       "status": "Data collection, entry, and analysis complete · Manuscript in preparation for submission",
       "isGold": true
     },
@@ -45,7 +45,7 @@
     {
       "title": "AlgoLadder — Bilingual Computational Thinking Tutor",
       "description": "A bilingual (Hausa-English) computational thinking tutor for low-achieving novice computing students, built into a full multi-study research portal with a Node.js/Express backend and Supabase PostgreSQL database.",
-      "status": "Developed and deployed on the MultiStudy Research Portal, participation of schools solicited, and awaiting second semester resumption in schools for data collection"
+      "status": "Actively developed and expanding as a research platform"
     }
   ],
 
@@ -213,6 +213,16 @@
       "name": "ACM Digital Library",
       "url": "https://dl.acm.org/profile/99661066432",
       "icon": "https://dl.acm.org/favicon.ico"
+    },
+    {
+      "name": "Scopus",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=57553644500",
+      "icon": "https://www.scopus.com/favicon.ico"
+    },
+    {
+      "name": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Oladele-Campbell/publications",
+      "icon": "https://www.researchgate.net/favicon.ico"
     }
   ]
 }
