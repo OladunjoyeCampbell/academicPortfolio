@@ -5,7 +5,7 @@
 
   "impactMetrics": [
     { "number": "30+", "label": "Years in CS Education", "aria": "Over thirty years of experience in computer science education, teaching since 1995" },
-    { "number": "16", "label": "Publications", "aria": "Sixteen journal articles, conference papers, and a book" },
+    { "number": "16", "label": "Publications (2013–2026)", "aria": "Sixteen journal articles, conference papers, and a book, published from 2013 to 2026" },
     { "number": "2021", "label": "ACM Senior Member Since", "aria": "ACM Senior Member since 2021" },
     { "number": "100+", "label": "Final-Year Projects Supervised", "aria": "Over one hundred PGD, HND, and ND final-year research projects supervised" }
   ],
@@ -39,13 +39,13 @@
     },
     {
       "title": "International Impostor Phenomenon Study II",
-      "description": "A second multi-institutional impostor phenomenon study led by Prof. Andrew Petersen (University of Toronto), with research instruments deployed on the Multi-Study Research Portal.",
+      "description": "A second multi-institutional impostor phenomenon study led by Prof. Andrew Petersen (University of Toronto Mississauga), with research instruments deployed on the Multi-Study Research Portal.",
       "status": "Ongoing · Data collection paused, resuming when students return for second semester at Niger State Polytechnic and partner institutions"
     },
     {
       "title": "AlgoLadder — Bilingual Computational Thinking Tutor",
       "description": "A bilingual (Hausa-English) computational thinking tutor for low-achieving novice computing students, built into a full multi-study research portal with a Node.js/Express backend and Supabase PostgreSQL database.",
-      "status": "Actively developed and expanding as a research platform"
+      "status": "Developed and deployed on the MultiStudy Research Portal · Participation of schools solicited · Awaiting second semester resumption for data collection"
     }
   ],
 
