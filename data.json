@@ -50,19 +50,29 @@
   ],
 
   "publications": [
-    {
-      "title": "Multi-Institutional Study on Impostor Phenomenon",
-      "authors": "Krause-Levy, S., Petersen, A., Campbell, O. O., et al.",
-      "venue": "ACM Transactions on Computing Education, 25(4), Article 47",
+  {
+    "title": "Multi-Institutional Study on Impostor Phenomenon",
+    "authors": "Krause-Levy, S., Petersen, A., Campbell, O. O., et al.",
+    "venue": "ACM Transactions on Computing Education, 25(4), Article 47",
+    "year": "2025",
+    "award": {
+      "name": "Distinguished Paper Award",
+      "year": "2026"
+    },
+    "doi": "10.1145/3748665",
+    "url": "https://doi.org/10.1145/3748665"
+  },
+  {
+    "title": "The Impostor Phenomenon Among Nigerian Computing Students: A Study of Prevalence, Gender, and Academic Progression",
+    "authors": "Campbell, O. O., Krause-Levy, S., Porter, L., Sanusi, I. T., Adelakun-Adeyemo, O.",
+    "venue": "Proceedings of the ACM Global Computing Education Conference (CompEd 2025), Gaborone, Botswana",
+    "year": "2025",
+    "award": {
+      "name": "Best Paper Runner-Up",
       "year": "2025"
     },
-    {
-      "title": "The Impostor Phenomenon Among Nigerian Computing Students: A Study of Prevalence, Gender, and Academic Progression",
-      "authors": "Campbell, O. O., Krause-Levy, S., Porter, L., Sanusi, I. T., Adelakun-Adeyemo, O.",
-      "venue": "Proc. ACM Global Computing Education Conference (CompEd 2025), Gaborone, Botswana",
-      "year": "2025",
-      "award": "Best Paper Runner-Up",
-      "doi": "10.1145/3736181.3747136"
+    "doi": "10.1145/3736181.3747136",
+    "url": "https://doi.org/10.1145/3736181.3747136"
     },
     {
       "title": "Preliminary Insights into Computer Science Teacher Preparation Programs in Nigerian Universities",
